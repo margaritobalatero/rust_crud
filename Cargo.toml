@@ -1,0 +1,17 @@
+[package]
+name = "rust-mongo-crud"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+mongodb = "3.3"
+serde = { version = "1", features = ["derive"] }
+futures-util = "0.3"
+dotenvy = "0.15"
+jsonwebtoken = "9"
+bcrypt = "0.15"
+askama = { version = "0.12", features = ["with-axum"] }
+askama_axum = "0.4"
+

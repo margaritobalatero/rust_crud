@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h1>Dashboard</h1>
+    <ul>
+        {% for item in items %}
+            <li><b>{{ item.name }}</b>: {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/items/new">➕ Add New Item</a>
+</body>
+</html>
